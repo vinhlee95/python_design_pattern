@@ -21,13 +21,16 @@ class Rectangle:
     def set_height(self, val):
         self._height = val
 
-
     def __repr__(self) -> str:
         return f"Width is {self._width}. Height is {self._height}"
 
 
-
 class Square(Rectangle):
+    """
+    It probably does not make sense to have 2 separate set_with and set_height for this class
+    since a square should always have width = height.
+    This fails the Liskov Substitution Test. Square should better be a separate class.
+    """
     def __init__(self, size) -> None:
         super().__init__(width=size, height=size)
 
@@ -50,7 +53,6 @@ def calculate_area(rect: Rectangle):
     # This is unexpected because rect.set_height had a side effect of changing
     # both width and height of the rect
     # Expected an area of 50, got 100
-
 
 
 my_rect = Rectangle(15, 5)
