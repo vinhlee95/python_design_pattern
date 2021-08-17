@@ -41,4 +41,8 @@ IMO, dependency inversion principle connects to "Open and Close" principle to so
 * `SizeCalculation` is also closed for modification. Because we don't need to modify its `calculate` method to support a new kind of formatter or shape. Just injecting new formatters and shapes and leave `calculate` untouched.
 
 ## Resources
+[Python Protocols](https://www.python.org/dev/peps/pep-0544/#defining-a-protocol)
+
 https://codingwithjohan.com/blog/solid-python-dependency-inversion-principle/
+
+https://levelup.gitconnected.com/tenet-of-inversion-with-python-9759ef73dbcf
