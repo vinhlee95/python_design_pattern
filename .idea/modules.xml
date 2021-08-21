@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/python_design_patterns.iml" filepath="$PROJECT_DIR$/.idea/python_design_patterns.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../source_python_design_patterns/.idea/source_python_design_patterns.iml" filepath="$PROJECT_DIR$/../source_python_design_patterns/.idea/source_python_design_patterns.iml" />
     </modules>
   </component>
 </project>

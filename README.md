@@ -9,3 +9,5 @@
 [Interface Segregation](./interface_segregation/README.md)
 
 [Dependency Inversion](./dependency_inversion/README.md)
+
+[Builder pattern](./builder/README.md)
