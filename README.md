@@ -11,3 +11,5 @@
 [Dependency Inversion](./dependency_inversion/README.md)
 
 [Builder pattern](./builder/README.md)
+
+[Factory method pattern](./factory/README.md)
