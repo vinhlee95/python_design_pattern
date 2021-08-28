@@ -3,8 +3,6 @@ class Database:
     Singleton Database class
     The goal is to store and hold only 1 instance of the database.
     """
-    _instance = None
-
     def __init__(self):
         """
         ⚠️⚠️⚠️⚠️⚠️⚠️
@@ -15,11 +13,11 @@ class Database:
         print("Loading DB...")
     
     def __new__(cls, *args, **kwargs):
-        if not cls._instance:
+        if not hasattr(cls, '_instance'):
             cls._instance = super(Database, cls).__new__(cls, *args, **kwargs)
         return cls._instance
 
 
 db_instance_1 = Database()
 db_instance_2 = Database()
-# print(db_instance_1 == db_instance_2) # True
+print(db_instance_1 == db_instance_2)
